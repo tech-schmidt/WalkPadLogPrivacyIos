@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkpadLog — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #f5f5f7;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 24px 80px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .subtitle {
+            color: #86868b;
+            font-size: 0.95em;
+        }
+        .lang-switch {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 16px;
+        }
+        .lang-switch button {
+            padding: 6px 16px;
+            border: 1px solid #d2d2d7;
+            border-radius: 20px;
+            background: white;
+            color: #1d1d1f;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .lang-switch button.active {
+            background: #007aff;
+            color: white;
+            border-color: #007aff;
+        }
+        .lang-switch button:hover:not(.active) {
+            background: #e8e8ed;
+        }
+        .content {
+            background: white;
+            border-radius: 16px;
+            padding: 32px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        h2 {
+            font-size: 1.25em;
+            font-weight: 600;
+            margin-top: 28px;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+        h2:first-child { margin-top: 0; }
+        p { margin-bottom: 14px; color: #424245; }
+        ul {
+            margin-bottom: 14px;
+            padding-left: 20px;
+            color: #424245;
+        }
+        li { margin-bottom: 6px; }
+        strong { color: #1d1d1f; }
+        .hidden { display: none; }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #86868b;
+            font-size: 0.85em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>WalkpadLog</h1>
+            <div class="lang-switch">
+                <button id="btn-en" class="active" onclick="switchLang('en')">English</button>
+                <button id="btn-de" onclick="switchLang('de')">Deutsch</button>
+            </div>
+        </header>
+
+        <!-- English -->
+        <div id="content-en" class="content">
+            <p class="subtitle" style="margin-bottom: 24px; color: #86868b;">Last updated: March 2026</p>
+
+            <h2>Overview</h2>
+            <p>WalkpadLog is designed with your privacy in mind. The app stores all data locally on your device and does not collect, transmit, or share any personal information.</p>
+
+            <h2>Data Collection</h2>
+            <p><strong>WalkpadLog does not collect any data.</strong> There are no analytics, no crash reporting, no advertising SDKs, and no third-party services integrated into the app.</p>
+
+            <h2>Data Storage</h2>
+            <p>All data is stored exclusively on your device:</p>
+            <ul>
+                <li><strong>Walking sessions</strong> (distance, steps, date) are saved locally in the app's sandboxed storage.</li>
+                <li><strong>Preferences</strong> (step length, walk days, notification settings) are saved in the app's local settings.</li>
+            </ul>
+            <p>No data is transmitted to any server. The app does not require an internet connection to function.</p>
+
+            <h2>Apple Health (HealthKit)</h2>
+            <p>If you choose to enable HealthKit integration in the app's Settings, WalkpadLog will write the following data to Apple Health:</p>
+            <ul>
+                <li>Walking workouts (indoor)</li>
+                <li>Step count</li>
+                <li>Walking/running distance</li>
+            </ul>
+            <p>This data is shared only with Apple Health on your device. WalkpadLog does not read any data from Apple Health. You can disable this integration at any time in the app's Settings, and you can delete all data written by WalkpadLog in the Health app under your profile.</p>
+
+            <h2>Notifications</h2>
+            <p>If you enable reminders, the app schedules local notifications on your device. No notification data is sent to any server.</p>
+
+            <h2>Third-Party Services</h2>
+            <p>WalkpadLog does not integrate with any third-party services, SDKs, or APIs. The app uses only Apple's built-in frameworks (HealthKit, UserNotifications).</p>
+
+            <h2>Children's Privacy</h2>
+            <p>WalkpadLog does not knowingly collect any information from children. The app contains no objectionable content and is rated 4+.</p>
+
+            <h2>Data Deletion</h2>
+            <p>Since all data is stored locally on your device, you can delete all app data by uninstalling the app. HealthKit data written by WalkpadLog can be deleted in the Health app under Profile &rarr; Apps &rarr; WalkpadLog &rarr; Delete All Data.</p>
+
+            <h2>Changes to This Policy</h2>
+            <p>If this privacy policy is updated, the changes will be reflected in this document with an updated date.</p>
+
+            <h2>Contact</h2>
+            <p>If you have questions about this privacy policy, please contact:</p>
+            <p><strong>Email:</strong> <a href="mailto:walkpadlog@tech-schmidt.de">walkpadlog@tech-schmidt.de</a></p>
+        </div>
+
+        <!-- Deutsch -->
+        <div id="content-de" class="content hidden">
+            <p class="subtitle" style="margin-bottom: 24px; color: #86868b;">Zuletzt aktualisiert: März 2026</p>
+
+            <h2>Überblick</h2>
+            <p>WalkpadLog wurde mit dem Schutz deiner Privatsphäre entwickelt. Die App speichert alle Daten lokal auf deinem Gerät und erhebt, überträgt oder teilt keinerlei persönliche Informationen.</p>
+
+            <h2>Datenerhebung</h2>
+            <p><strong>WalkpadLog erhebt keine Daten.</strong> Es gibt keine Analysedienste, keine Absturzberichte, keine Werbe-SDKs und keine Drittanbieter-Dienste in der App.</p>
+
+            <h2>Datenspeicherung</h2>
+            <p>Alle Daten werden ausschließlich auf deinem Gerät gespeichert:</p>
+            <ul>
+                <li><strong>Geh-Einträge</strong> (Strecke, Schritte, Datum) werden lokal im geschützten Speicher der App gesichert.</li>
+                <li><strong>Einstellungen</strong> (Schrittlänge, Gehtage, Benachrichtigungen) werden in den lokalen Einstellungen der App gespeichert.</li>
+            </ul>
+            <p>Es werden keine Daten an einen Server übertragen. Die App benötigt keine Internetverbindung.</p>
+
+            <h2>Apple Health (HealthKit)</h2>
+            <p>Wenn du die HealthKit-Integration in den Einstellungen der App aktivierst, schreibt WalkpadLog folgende Daten in Apple Health:</p>
+            <ul>
+                <li>Geh-Workouts (Indoor)</li>
+                <li>Schrittzahl</li>
+                <li>Geh-/Laufstrecke</li>
+            </ul>
+            <p>Diese Daten werden nur mit Apple Health auf deinem Gerät geteilt. WalkpadLog liest keine Daten aus Apple Health. Du kannst diese Integration jederzeit in den Einstellungen der App deaktivieren und alle von WalkpadLog geschriebenen Daten in der Health-App unter Profil &rarr; Apps &rarr; WalkpadLog &rarr; Alle Daten löschen entfernen.</p>
+
+            <h2>Benachrichtigungen</h2>
+            <p>Wenn du Erinnerungen aktivierst, plant die App lokale Benachrichtigungen auf deinem Gerät. Es werden keine Benachrichtigungsdaten an einen Server gesendet.</p>
+
+            <h2>Drittanbieter-Dienste</h2>
+            <p>WalkpadLog nutzt keine Drittanbieter-Dienste, SDKs oder APIs. Die App verwendet ausschließlich Apples eingebaute Frameworks (HealthKit, UserNotifications).</p>
+
+            <h2>Datenschutz für Kinder</h2>
+            <p>WalkpadLog erhebt wissentlich keine Informationen von Kindern. Die App enthält keine anstößigen Inhalte und ist ab 4+ Jahren freigegeben.</p>
+
+            <h2>Datenlöschung</h2>
+            <p>Da alle Daten lokal auf deinem Gerät gespeichert sind, kannst du alle App-Daten durch Deinstallation der App löschen. HealthKit-Daten, die von WalkpadLog geschrieben wurden, können in der Health-App unter Profil &rarr; Apps &rarr; WalkpadLog &rarr; Alle Daten löschen entfernt werden.</p>
+
+            <h2>Änderungen dieser Erklärung</h2>
+            <p>Wenn diese Datenschutzerklärung aktualisiert wird, werden die Änderungen in diesem Dokument mit einem aktualisierten Datum festgehalten.</p>
+
+            <h2>Kontakt</h2>
+            <p>Bei Fragen zu dieser Datenschutzerklärung wende dich bitte an:</p>
+            <p><strong>E-Mail:</strong> <a href="mailto:walkpadlog@tech-schmidt.de">walkpadlog@tech-schmidt.de</a></p>
+        </div>
+
+        <footer>
+            &copy; 2026 Tech-Schmidt
+        </footer>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('content-en').classList.toggle('hidden', lang !== 'en');
+            document.getElementById('content-de').classList.toggle('hidden', lang !== 'de');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+        }
+
+        // Auto-detect browser language
+        if (navigator.language.startsWith('de')) {
+            switchLang('de');
+        }
+    </script>
+</body>
+</html>
